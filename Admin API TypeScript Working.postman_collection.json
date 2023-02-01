@@ -1,0 +1,545 @@
+{
+	"info": {
+		"_postman_id": "fa071318-2eb8-404d-a514-bbc97d5f3c32",
+		"name": "Admin API TypeScript Working",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"Bahvesh Patel\",\r\n    \"Password\":\"Bahvesh@123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"deep Patel\",\r\n    \"Password\":\"deep@123456\",\r\n    \"City\":\"Surat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/adduser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adduser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"UserName\":\"Darshan Patel\",\r\n    \"Password\":\"Darshan@1234567\",\r\n    \"City\":\"surat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/updateuser/6336edb02b7a258767b8e8ad",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateuser",
+						"6336edb02b7a258767b8e8ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/deleteuser/63356dd2adb486acfcb3b0ce",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteuser",
+						"63356dd2adb486acfcb3b0ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Moniter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MoniterName\":\"AOC OLED\",\r\n    \"ModelNo\":\"AocMONO224\",\r\n    \"CreatedBy\"  :\"6336ed8f41788e23bd081007\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/addmoniter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addmoniter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Moniter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/viewmoniter",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"viewmoniter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Moniter",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MoniterName\":\"AOC LED\",\r\n    \"ModelNo\":\"AocMONO224\",\r\n    \"CreatedBy\":\"6336ed8f41788e23bd081007\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updatemoniter/6336eea92b7a258767b8e8ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatemoniter",
+						"6336eea92b7a258767b8e8ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Moniter",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/deletemoniter/63356fa9adb486acfcb3b0ea",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletemoniter",
+						"63356fa9adb486acfcb3b0ea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Cpu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CpuName\":\"ASUS\",\r\n    \"ModelNo\":\"CAB0160\",\r\n    \"Processor\":\"intel i5\",\r\n    \"CreatedBy\"  :\"6336ed8f41788e23bd081007\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/addcpu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addcpu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Cpu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/viewcpu",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"viewcpu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cpu",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CpuName\":\"ASUS\",\r\n    \"ModelNo\":\"CAB0156\",\r\n    \"Processor\":\"intel i5\",\r\n    \"CreatedBy\":\"6336ed8f41788e23bd081007\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updatecpu/6336f0b48fa7600939165f39",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatecpu",
+						"6336f0b48fa7600939165f39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cpu",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/deletecpu/6336eb3e681284b667b4c7b3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletecpu",
+						"6336eb3e681284b667b4c7b3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Mouse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MouseName\":\"Apple Magic Mouse\",\r\n    \"ModelNo\":\"AppleMON0221Wirless\",\r\n    \"CreatedBy\":\"6336ed8f41788e23bd081007\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/addmouse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addmouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Mouse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/viewmouse",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"viewmouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Mouse",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MouseName\":\"dellMagicMouse\",\r\n    \"ModelNo\":\"dellmagicMON0221Wirlesss\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updatemouse/633573fbadb486acfcb3b12e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatemouse",
+						"633573fbadb486acfcb3b12e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Mouse",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/deletemouse/633573fbadb486acfcb3b12e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletemouse",
+						"633573fbadb486acfcb3b12e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Assign System",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MoniterId\"  :\"6336eea92b7a258767b8e8ce\",\r\n    \"CpuId\"  :\"6336f0b48fa7600939165f39\",\r\n    \"MouseId\"  :\"6336f13d8fa7600939165f47\",\r\n    \"AssignToUserId\"  :\"6336ed8f41788e23bd081007\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/addAssignSystem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addAssignSystem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Assign System",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/viewassignSystem/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"viewassignSystem",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single Assign System",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/singleviewassignsystem/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"singleviewassignsystem",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Assign System",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MoniterId\"  :\"63356eebadb486acfcb3b0d8\",\r\n    \"CpuId\"  :\"63357171adb486acfcb3b10a\",\r\n    \"MouseId\"  :\"6335746badb486acfcb3b134\",\r\n    \"AssignToUserId\"  :\"63356adfa8f376304872144e\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/updateassignSystem/633585097ab156498e90e2dd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateassignSystem",
+						"633585097ab156498e90e2dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Assign System",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/deleteassignSystem/633587ab7ab156498e90e2f6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteassignSystem",
+						"633587ab7ab156498e90e2f6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
